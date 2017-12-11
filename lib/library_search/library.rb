@@ -1,0 +1,2 @@
+class LibrarySearch::Library
+end

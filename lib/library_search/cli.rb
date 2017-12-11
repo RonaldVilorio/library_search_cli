@@ -1,0 +1,3 @@
+class LibrarySearch::CLI
+  
+end
