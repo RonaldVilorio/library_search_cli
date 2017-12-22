@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'ronald vilorio'"]
   spec.email         = ["'ronvilorio@gmail.com'"]
 
-  spec.summary       = %q{Finds libraries near a specific zip code and shows address for chosen library.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Finds libraries near a specific zip code and shows address for chosen library."
+  spec.homepage      = "http://learn.co"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
