@@ -7,10 +7,9 @@ Gem::Specification.new do |spec|
   spec.name          = "library_search"
   spec.version       = LibrarySearch::VERSION
   spec.authors       = ["'ronald vilorio'"]
-  spec.email         = ["'soccer23415@gmail.com'"]
+  spec.email         = ["'ronvilorio.com'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Finds libraries near a specific zip code and shows address for chosen library.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
