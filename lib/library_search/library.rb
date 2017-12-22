@@ -3,7 +3,7 @@ class LibrarySearch::Library
   attr_accessor :name,:state,:street,:city,:zip,:country,:phone
 
   def self.create_libraries(library)
-    binding.pry
+    # binding.pry
     self.new(
     library["name"],
     library["address"]["stateName"],
