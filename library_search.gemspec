@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "library_search"
   spec.version       = LibrarySearch::VERSION
   spec.authors       = ["'ronald vilorio'"]
-  spec.email         = ["'ronvilorio.com'"]
+  spec.email         = ["'ronvilorio@gmail.com'"]
 
   spec.summary       = %q{Finds libraries near a specific zip code and shows address for chosen library.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
@@ -31,4 +31,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rest-client"
+  spec.add_development_dependency "json"
+  spec.add_development_dependency "pry"
 end
