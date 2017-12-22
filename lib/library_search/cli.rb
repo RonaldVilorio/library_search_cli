@@ -32,7 +32,7 @@ class LibrarySearch::CLI
       puts ""
       puts "Which library would you like more information on, by name or number?"
       puts ""
-      puts "Enter 'list' to see the libraries again."
+      puts "Enter 'list' to choose a different zip code and list libraries."
       puts "Enter 'exit' to leave the program."
       puts ""
       user_input = gets.chomp
