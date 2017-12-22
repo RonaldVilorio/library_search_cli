@@ -16,22 +16,37 @@ class LibrarySearch::CLI
     puts ""
 
   end
+  def print_info(library)
+    puts ""
+    puts "--- #{library.name} ---"
+
+    puts ""
+    puts library.info
+    puts ""
+  end
 
   def start
     list
     user_input = nil
     while user_input != "exit"
       puts ""
-      puts "What library would you like more information on, by name or number?"
+      puts "Which library would you like more information on, by name or number?"
       puts ""
-      puts "Enter list to see the libraries again."
-      puts "Enter exit to leave the program."
+      puts "Enter 'list' to see the libraries again."
+      puts "Enter 'exit' to leave the program."
       puts ""
       user_input = gets.chomp
       if user_input == "list"
         list
       elsif user_input.to_i == 0
         if library = LibrarySearch::Library.find_by_name(user_input)
+          print_info(library)
+        end
+
+
+
+
+
 
 
   end
