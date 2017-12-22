@@ -1,5 +1,6 @@
 class LibrarySearch::Library
   @@all = []
+  attr_accessor :name,:state,:street,:city,:zip,:country,:phone
 
   def self.create_libraries(library)
     binding.pry
@@ -22,7 +23,14 @@ class LibrarySearch::Library
     @zip = zip
     @country = country
     @phone = phone
-    # binding.pry
     @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+
+  def self.destroy_all
+    @@all.clear
   end
 end
