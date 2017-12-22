@@ -42,12 +42,11 @@ class LibrarySearch::CLI
         if library = LibrarySearch::Library.find_by_name(user_input)
           print_info(library)
         end
-
-
-
-
-
-
-
+      elsif user_input.to_i > 0
+        if library = LibrarySearch::Library.find(user_input.to_i)
+          print_info(library)
+        end
+      end
+    end
   end
 end

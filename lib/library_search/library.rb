@@ -43,6 +43,7 @@ class LibrarySearch::Library
     puts "#{@state}"
     puts "#{@zip}"
     puts "#{@country}"
+    puts "#{@phone}"
   end
 
 end
