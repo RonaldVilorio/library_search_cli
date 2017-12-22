@@ -5,10 +5,10 @@ class LibrarySearch::API
     &wskey=Nbtgqc4PfUGgeYo1IwxXQ3zzkkNvlYRgCtVecBXcPCSTVErvxpCreKl5cLUzDB1gxIWpUPHRRajkOZ9W")
 
     @parsed_libraries = JSON.parse(data)
-    @parsed_libraries.each do |library|
+    @parsed_libraries["institutions"].each do |library|
       LibrarySearch::Library.create_libraries(library)
     end
-    
+
 
   end
 end
