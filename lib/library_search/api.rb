@@ -6,7 +6,7 @@ class LibrarySearch::API
 
     @parsed_libraries = JSON.parse(data)
     @parsed_libraries["institutions"].each do |library|
-      LibrarySearch::Library.create_libraries(library)
+      LibrarySearch::LibraryImporter.import(library)
     end
 
 

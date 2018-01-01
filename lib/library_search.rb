@@ -11,3 +11,4 @@ require_relative "library_search/version"
 require_relative 'library_search/api'
 require_relative 'library_search/cli'
 require_relative 'library_search/library'
+require_relative 'library_search/library_importer'
