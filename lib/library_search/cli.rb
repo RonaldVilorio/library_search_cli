@@ -40,11 +40,11 @@ class LibrarySearch::CLI
         list
       elsif user_input.to_i == 0
         if library = LibrarySearch::Library.find_by_name(user_input)
-          print_info(library)
+          print_info(library) else puts "couldn't find a library named #{user_input}"
         end
       elsif user_input.to_i > 0
         if library = LibrarySearch::Library.find(user_input.to_i)
-          print_info(library)
+          print_info(library) else puts "couldn't find a library with number #{user_input}"
         end
       end
     end
