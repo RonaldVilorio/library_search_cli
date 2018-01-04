@@ -8,8 +8,11 @@ class LibrarySearch::CLI
     while zip.to_s.size != 5
       puts "Welcome, please enter a zip code to find libraries near you."
       zip = gets.chomp
-      zip = zip.to_i
+      # zip = zip.to_i
       if zip.to_s.size != 5
+        puts "Enter a valid zip code that is 5 digits long."
+      elsif !zip.match(/^\d{5}(?:[-\s]\d{4})?$/)
+        zip = nil
         puts "Enter a valid zip code that is 5 digits long."
       else
         LibrarySearch::API.get_libraries(zip)
